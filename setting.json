@@ -1,0 +1,174 @@
+{
+  // **General Settings**
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDelete": false,
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "visible",
+
+  // **ChatGPT Integration**
+  "chatgpt.lang": "en",
+
+  // **Editor Settings**
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.fontSize": 14,
+  "editor.tabSize": 4,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.renderLineHighlight": "all",
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.guides.indentation": false,
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": false,
+
+  // **Emmet Settings**
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.useInlineCompletions": true,
+  "emmet.showSuggestionsAsSnippets": true,
+
+  // **File and Formatting Settings**
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "prettier.singleQuote": true,
+
+  // **Language-Specific Settings**
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript, javascriptreact, typescript, scss, jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+
+  // **Workbench Settings**
+  "workbench.settings.useSplitJSON": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {},
+  "workbench.layoutControl.enabled": false,
+
+  // **Terminal Settings**
+  "terminal.integrated.shellIntegration.suggestEnabled": false,
+  "terminal.integrated.env.windows": {},
+
+  // **Remote Development Settings**
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "remote.SSH.remotePlatform": {
+    "gitpodsampl-springpetcl-xh2v08w7mvj.vss.gitpod.io": "linux"
+  },
+
+  // **Git Settings**
+  "git.openRepositoryInParentFolders": "never",
+
+  // **Extensions Settings**
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "tabnine.experimentalAutoImports": true,
+
+  // **JSON and Launch Settings**
+  "json.schemas": [],
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  // **TypeScript and JavaScript Settings**
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "typescript.tsc.autoDetect": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.check.tscVersion": false,
+
+  // **Settings Sync Settings**
+  "settingsSync.ignoredSettings": [
+    "js/ts.implicitProjectConfig.experimentalDecorators",
+    "editor.formatOnSave"
+  ],
+
+  // **Prisma Settings**
+  "prisma.showPrismaDataPlatformNotification": false,
+
+  // **ESLint Settings**
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+
+//   **Vetur Settings**
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+
+  // **Code Spell Checker Settings**
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+  "cSpell.userWords": ["autohide", "esbenp", "prettyhtml", "tabnine", "vetur"],
+
+  // **Miscellaneous Settings**
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
+  "editor.defaultColorDecorators": true,
+  "stylelint.enable": true,
+  "editor.language.colorizedBracketPairs": [[]],
+  "editor.language.brackets": [[]],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"]
+}
