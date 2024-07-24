@@ -7,17 +7,17 @@
   "window.commandCenter": true,
   "window.menuBarVisibility": "visible",
 
+  "git.autofetch": true,
+  "window.zoomLevel": 0,
+
   // **ChatGPT Integration**
   "chatgpt.lang": "en",
-
-  // **Editor Settings**
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wordWrap": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
-  "editor.fontSize": 14,
+  "editor.fontSize": 17,
   "editor.tabSize": 4,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -28,10 +28,10 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.guides.indentation": false,
   "editor.renderControlCharacters": false,
-  "editor.minimap.enabled": true,
-  "editor.minimap.scale": 2,
-  "editor.minimap.autohide": true,
-  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 1,
+  "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "Cascadia Code, Meslo LG S DZ, Consolas",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
 
   // **Emmet Settings**
   "emmet.includeLanguages": {
@@ -39,11 +39,14 @@
   },
   "emmet.useInlineCompletions": true,
   "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.preferences": {},
 
   // **File and Formatting Settings**
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
   "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // **Language-Specific Settings**
   "[typescript]": {
@@ -71,9 +74,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascript, javascriptreact, typescript, scss, jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
 
   // **Workbench Settings**
@@ -95,6 +97,7 @@
 
   // **Git Settings**
   "git.openRepositoryInParentFolders": "never",
+  "git.confirmSync": false,
 
   // **Extensions Settings**
   "extensions.ignoreRecommendations": true,
@@ -113,6 +116,7 @@
   "typescript.tsc.autoDetect": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.check.tscVersion": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
   // **Settings Sync Settings**
   "settingsSync.ignoredSettings": [
@@ -145,7 +149,7 @@
     "source.fixAll.eslint": "always"
   },
 
-//   **Vetur Settings**
+  // **Vetur Settings**
   "vetur.format.defaultFormatterOptions": {
     "js-beautify-html": {
       "wrap_attributes": "force-expand-multiline"
@@ -161,14 +165,40 @@
   // **Code Spell Checker Settings**
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
-  "cSpell.userWords": ["autohide", "esbenp", "prettyhtml", "tabnine", "vetur"],
+  "cSpell.enabled": false,
 
   // **Miscellaneous Settings**
-  "window.zoomLevel": 1,
   "breadcrumbs.enabled": true,
   "editor.defaultColorDecorators": true,
   "stylelint.enable": true,
   "editor.language.colorizedBracketPairs": [[]],
   "editor.language.brackets": [[]],
-  "errorLens.enabledDiagnosticLevels": ["warning", "error"]
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "terminal.integrated.allowChords": false,
+  "editor.matchBrackets": false,
+  "vscode-edge-devtools.webhint": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.minimap.showSlider": "always",
+  "git.mergeEditor": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+  // **Tailwind CSS Settings**
+  "tailwindCSS.emmetCompletions": true,
+
+  // **HTML/CSS Class Completion Settings**
+  "html-css-class-completion.enableEmmetSupport": true,
+
+  // **Turbo Console Log Settings**
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+
+  // **Live Server Settings**
+  "liveServer.settings.donotVerifyTags": true,
+
+  // **File Associations**
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+
+  // **Error Lens Settings**
+  "errorLens.excludeBySource": ["css(unknownAtRules)"]
 }
